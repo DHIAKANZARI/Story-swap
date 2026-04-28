@@ -1,6 +1,6 @@
 import { io } from 'socket.io-client';
 
-const URL = 'https://storyaa.onrender.com';
+const URL = import.meta.env.VITE_SERVER_URL || 'https://storyaa.onrender.com';
 
 export const socket = io(URL, {
   autoConnect: true
