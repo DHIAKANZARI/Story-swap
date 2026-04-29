@@ -5,7 +5,7 @@ const { initSocket } = require('./socket');
 
 const app = express();
 app.use(cors({
-  origin: storyaaa.netlify.app,
+  origin: "storyaaa.netlify.app",
   methods: ["GET", "POST"]
 }));
 
